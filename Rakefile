@@ -9,7 +9,7 @@ if defined?(RSpec)
   task :spec => 'spec:all'
 
   namespace :spec do
-    task :all => [ 'spec:type:all', 'spec:helper' ]
+    task :all => [ 'spec:type:windows' ]
 
     namespace :type do
       oses = Dir.glob('spec/type/*').map {|d| File.basename(d)}
